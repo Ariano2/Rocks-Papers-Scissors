@@ -22,4 +22,9 @@ function playRound(userChoice,computerChoice){
         console.log("Computer has won! \n");
     }
 }
-playRound(prompt("Kindly chose between rock,paper and scissor"),getComputerChoice());
+let iter="y";
+while (iter==="y"){
+    playRound(prompt("Kindly chose between rock,paper and scissor"),getComputerChoice());
+    iter=prompt("enter y to keep playing");
+    console.log(iter);
+}
